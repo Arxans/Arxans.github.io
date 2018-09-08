@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="Dropdown list.js"></script>
+	
+	<title>Тестовое задание</title>
+</head>
+<body>
+	<div class="Dropdown">
+		<span class="custom-dropdown">
+		    <select id="graph-table">
+		        <option value="0">График</option>
+		        <option value="1">Таблица</option>  
+		    </select>
+		</span>
+	</div>
+	
+	<canvas id="myChart"></canvas>		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+	<script src="Graph.js"></script>
+
+	<div id="mode">
+		<span id="period">Курс валюты за период	с :	&nbsp; <input id="ifrom" type="date"> &nbsp; 	по:	&nbsp; <input id="ito" type="date"></span>
+		<span class="custom-dropdown">
+			<select id="currency">
+		        <option value="0">USD</option>
+		        <option value="1">EUR</option>  
+		        <option value="2">RUB</option>
+		    </select>
+		</span>
+		<input type="button" id="btn" value="Получить"/>
+		<ul id="res"></ul>
+  	</div>
+		
+	<table id="tableCur">
+		<tr>
+			<th>USD</th>	
+			<th>EUR</th>	
+			<th>RUB</th>
+		</tr>
+		<tr>
+			<td>День 1</td>	
+			<td>День 1</td>	
+			<td>День 1</td>
+		</tr>
+		<tr>
+			<td>День 2</td>	
+			<td>День 2</td>	
+			<td>День 2</td>
+		</tr>
+		<tr>
+			<td>День 3</td>	
+			<td>День 3</td>	
+			<td>День 3</td>
+		</tr>
+	</table>
+	    
+    
+</body>
+</html>
