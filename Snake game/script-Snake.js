@@ -17,7 +17,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
 var span = document.getElementsByClassName("close")[0];
 
-through_walls.checked = false;
+through_walls.checked = true;
 
 var snake = [{x:Math.floor(Math.random() * 16),		//Random [0..15]
 			  y:Math.floor(Math.random() * 13)}];
