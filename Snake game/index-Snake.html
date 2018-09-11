@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style-Snake.css">
+	<script src="script-Snake.js" defer=""></script>
+	<title>Snake</title>
+</head>
+<body>
+	<div id="score"></div>
+	<canvas id="canvas" width="632" height="632"></canvas>
+	<div class="grid-gradient"></div>
+	<div id="keyboard">
+		<div id="keyUp"></div>
+		<div id="middle">
+			<div id="keyLeft"></div>
+			<div id="keyCenter"></div>
+			<div id="keyRight"></div>
+		</div>
+		<div id="keyDown"></div>
+	</div>
+	<div class="settings">
+		<a><input id="through_walls" type="checkbox">Прохождение сквозь стены</a>
+	</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p class="game-over" id="text">Game Over</p>
+			<p class="game-over" id="result"></p>
+		</div>
+	</div>
+</body>
+</html>

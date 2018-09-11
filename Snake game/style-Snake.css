@@ -1,0 +1,180 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(body.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#score{
+	width: 632px;
+	height: 60px;
+	padding-top: 5px;
+	margin: 30px auto;
+	color: black;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 30px;
+	background: radial-gradient(at top, #6A5ACD, #FFFAFA);
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+#canvas{
+	width: 632px;
+	height: 632px; 	
+	display: block;
+	margin: 20px auto;
+	border: 1px solid #000;
+	border-radius: 10px;
+	background-image: url(canvas.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#keyboard {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 260px;
+	height: 260px;
+	background-image: url(FonKeyboard.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#keyUp, #keyLeft, #keyRight, #keyDown {
+	width: 90px;
+	height: 90px;
+	border: 2px solid gray;
+    border-radius: 100px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#keyUp {
+	margin-left: 80px;
+	background-image: url(Up.png);
+}
+#keyLeft {
+	margin-top: 75px;
+	background-image: url(Left.png);
+}
+#keyRight {
+	margin-top: 75px;
+	margin-left: 145px;
+	background-image: url(Right.png);
+}
+#keyDown {
+	margin-left: 80px;
+	margin-top: 145px;
+	background-image: url(Down.png);
+}
+#keyUp:hover {
+	background-color: #b1b3b1;
+	border: 3px solid purple;
+}
+#keyLeft:hover {
+	background-color: #b1b3b1;
+	border: 3px solid purple;
+}
+#keyRight:hover {
+	background-color: #b1b3b1;
+	border: 3px solid purple;
+}
+#keyDown:hover {
+	background-color: #b1b3b1;
+	border: 3px solid purple;
+}
+#keyUp:active {
+	width: 80px;
+	height: 80px;
+	margin-left: 85px;
+	margin-top: 15px;
+}
+#keyLeft:active {
+	width: 80px;
+	height: 80px;
+	margin-top: 80px;
+	margin-left: 15px;
+}
+#keyRight:active {
+	width: 80px;
+	height: 80px;
+	margin-top: 80px;
+	margin-left: 150px;
+}
+#keyDown:active {
+	width: 80px;
+	height: 80px;
+	margin-left: 85px;
+	margin-top: 150px;
+}
+
+/* Checkbox */
+.settings{
+	text-align: center;
+	font-size: 125%;
+	margin-bottom: 1%;
+	margin-right: 2%;
+	color: #FAF0E6;
+}
+#through_walls {
+	margin-right: 1%;
+}
+
+
+
+/* Окно Game Over */
+.game-over {
+	text-align: center;
+}
+
+ .modal{
+ 	border: 1px solid #000;
+	border-radius: 10px;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+}
+.modal-content{
+	position: relative;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 5px;
+	border: 2px solid #888;
+	width: 80%;
+	border: 2px solid gray;
+    border-radius: 30px;
+}
+.close{
+	transform:scale(2.5);
+	color: #aaa;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+}
+.close:hover{
+	cursor: pointer;
+}
+.game-over{
+	z-index: 2;
+	font-size: 40px;
+	color: #000;
+	font-weight: bold;
+}
