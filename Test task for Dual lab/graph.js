@@ -15,10 +15,8 @@ while (i < 7) {
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'line',
 
-    // The data for our dataset
     data: {
         labels: [arr[6], arr[5], arr[4], arr[3], arr[2], arr[1], 
         		 arr[0]],
@@ -33,6 +31,5 @@ var chart = new Chart(ctx, {
         }]
     },
 
-    // Configuration options go here
     options: {}
 });
