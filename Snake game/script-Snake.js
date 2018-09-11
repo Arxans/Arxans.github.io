@@ -20,7 +20,7 @@ var span = document.getElementsByClassName("close")[0];
 through_walls.checked = true;
 
 var snake = [{x:Math.floor(Math.random() * 16),		//Random [0..15]
-	      y:Math.floor(Math.random() * 13)}];
+			  y:Math.floor(Math.random() * 13)}];
 addTreeElToSnake();
 var fruit = {};
 var	score = 0;

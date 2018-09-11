@@ -93,28 +93,28 @@ body{
 	border: 3px solid purple;
 }
 #keyUp:active {
-	width: 80px;
-	height: 80px;
-	margin-left: 85px;
-	margin-top: 15px;
+	width: 130px;
+	height: 130px;
+	margin-left: 125px;
+	margin-top: 20px;
 }
 #keyLeft:active {
-	width: 80px;
-	height: 80px;
-	margin-top: 80px;
-	margin-left: 15px;
+	width: 130px;
+	height: 130px;
+	margin-top: 125px;
+	margin-left: 20px;
 }
 #keyRight:active {
-	width: 80px;
-	height: 80px;
-	margin-top: 80px;
-	margin-left: 150px;
+	width: 130px;
+	height: 130px;
+	margin-top: 125px;
+	margin-left: 230px;
 }
 #keyDown:active {
-	width: 80px;
-	height: 80px;
-	margin-left: 85px;
-	margin-top: 150px;
+	width: 130px;
+	height: 130px;
+	margin-left: 125px;
+	margin-top: 225px;
 }
 
 /* Checkbox */
