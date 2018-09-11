@@ -41,39 +41,39 @@ body{
 #keyboard {
 	margin: 0 auto;
 	margin-bottom: 20px;
-	width: 260px;
-	height: 260px;
+	width: 400px;
+	height: 400px;
 	background-image: url(FonKeyboard.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 #keyUp, #keyLeft, #keyRight, #keyDown {
-	width: 90px;
-	height: 90px;
+	width: 140px;
+	height: 140px;
 	border: 2px solid gray;
     border-radius: 100px;
 	position: absolute;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 #keyUp {
-	margin-left: 80px;
+	margin-left: 120px;
 	background-image: url(Up.png);
 }
 #keyLeft {
-	margin-top: 75px;
+	margin-top: 120px;
 	background-image: url(Left.png);
 }
 #keyRight {
-	margin-top: 75px;
-	margin-left: 145px;
+	margin-top: 120px;
+	margin-left: 225px;
 	background-image: url(Right.png);
 }
 #keyDown {
-	margin-left: 80px;
-	margin-top: 145px;
+	margin-top: 220px;
+	margin-left: 120px;
 	background-image: url(Down.png);
 }
 #keyUp:hover {
