@@ -92,7 +92,8 @@ function snakeCollision() {
 		obj.y = y;
 		snake.unshift(obj);
 		createFruit();
-		score += 10; timer = timer - timer/10;
+		score += 10;
+		timer = timer - timer/15;
 		return;
 	}
 	stepSnake();
