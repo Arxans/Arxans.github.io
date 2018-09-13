@@ -75,7 +75,6 @@ function restartCollision() {
 	for (var i = 1; i < snake.length; i++)
 		if (x == snake[i].x && y == snake[i].y) {
 			openModal();
-			setTimeout('restartGame()', 2000);
 		}
 }
 
@@ -133,9 +132,6 @@ function wallCollision(val) {
 	else{
 		if(val<0 || val>15){
 			openModal();
-			if(modal.style.display == "block") 
-				dirrect = '';
-			restartGame();
 		}
 	}
 	return val;
@@ -210,11 +206,13 @@ keyDown.onclick = function() {
 function openModal() {
 	modal.style.display = "block";
 	result.innerHTML = "Your score "+score+"!";
+	dirrect = '';
 	blockKey = true;
 }
 span.onclick = function closeModal() {
 	modal.style.display = "none";
 	blockKey = false;
+	restartGame();
 }
 window.onclick = function (event) {
 	if (event.target == modal){
